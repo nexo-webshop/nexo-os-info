@@ -15,6 +15,7 @@ from .os import (
     is_windows,
     is_linux,
     is_macos,
+    get_uptime,
 )
 
 from .github import get_changelog
@@ -33,5 +34,6 @@ __all__ = [
     "is_windows",
     "is_linux",
     "is_macos",
+    "get_uptime",
     "get_changelog",
 ]
