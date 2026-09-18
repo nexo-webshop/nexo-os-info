@@ -88,3 +88,16 @@ def is_linux():
 def is_macos():
     """Return True if the current operating system is macOS."""
     return get_os_name().lower() == "darwin"
+
+
+def get_uptime():
+    """Return the system uptime in seconds when available."""
+    try:
+        import time
+
+        if hasattr(time, "monotonic"):
+            return time.monotonic()
+    except Exception:
+        pass
+
+    return None
