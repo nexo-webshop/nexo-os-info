@@ -6,11 +6,17 @@ A simple Python package for retrieving operating system and system information.
 from .os import (
     get_os_name,
     get_os_version,
+    get_os_release,
+    get_platform,
+    get_kernel_version,
     get_os_architecture,
     get_machine_name,
     get_python_version,
     get_processor,
+    get_cpu_count,
     get_hostname,
+    get_memory,
+    get_disk_usage,
     get_system_info,
     is_windows,
     is_linux,
@@ -20,16 +26,22 @@ from .os import (
 
 from .github import get_changelog
 
-__version__ = "0.0.1.5"
+__version__ = "0.0.1.6"
 
 __all__ = [
     "get_os_name",
     "get_os_version",
+    "get_os_release",
+    "get_platform",
+    "get_kernel_version",
     "get_os_architecture",
     "get_machine_name",
     "get_python_version",
     "get_processor",
+    "get_cpu_count",
     "get_hostname",
+    "get_memory",
+    "get_disk_usage",
     "get_system_info",
     "is_windows",
     "is_linux",
